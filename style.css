@@ -1,0 +1,72 @@
+
+
+.body1 {
+  background-color: azure;
+}
+
+
+.container {
+  text-align: center;
+}
+
+.home {
+ width: 250;
+ box-shadow: 2px 2px 4px blue;
+ background-color: white;
+ border-radius: 12px;
+ font-size: 20;
+ height: 40;
+}
+
+.txt1 {
+  text-align: center;
+}
+
+.imaged1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 80;
+}
+
+.judul {
+  display: flex;
+  color: black;
+  font-family: Comic Sans MS, Sans-Serif;
+}
+
+.imaged { 
+  display: flex;
+  justify-content: center;
+}
+
+/* end body1 */
+  
+.bd2 {
+  background-color: white;
+}
+
+.div2h {
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
+  
+.th1 {
+  border: 3px solid black;
+  height: 50;
+ font-size: 48;
+ background-color: red;
+ color: white;
+}
+
+.htxt {
+  font-size: 45;
+  text-align: center;
+  margin-top: -50;
+}
+
+.th2 {
+  position: relative;
+  top: 500px;
+}
