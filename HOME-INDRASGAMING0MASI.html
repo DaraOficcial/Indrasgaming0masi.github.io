@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDRASGAMING0MASI</title>
+  <style>
+    /* Reset dan gaya dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Gaya header */
+    .header {
+      width: 100%;
+      position: relative;
+      background-color: red; /* Background merah */
+      padding: 15px 20px;
+      color: white; /* Teks putih */
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      color: white; /* Warna teks putih */
+    }
+
+    .header img {
+      width: 80px;
+      margin-top: 10px;
+    }
+
+    .header a {
+      color: white; /* Warna tautan putih */
+      text-decoration: underline;
+    }
+
+    /* Hamburger Menu */
+    .hamburger-menu {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .hamburger-menu div {
+      width: 30px;
+      height: 4px;
+      background-color: white; /* Warna garis putih */
+      border-radius: 2px;
+      transition: transform 0.3s;
+    }
+
+    /* Sidebar Menu */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      background-color: #222;
+      overflow: hidden;
+      transition: width 0.4s;
+      padding-top: 60px;
+      z-index: 1000;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 36px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Konten Utama */
+    .main-content {
+      margin-top: 20px;
+      text-align: center;
+      padding: 0 20px;
+      max-width: 800px;
+    }
+
+    .main-content h3 {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <h1>INDRASGAMING0MASI</h1>
+    <img src="yt1.png" alt="Logo">
+    <h3>CHANNEL YT: <a href="https://">INDRASGAMING0MASI</a></h3>
+    <h3>TERIMAKASIH TELAH MAMPIR KE WEBSITE INI</h3>
+  </header>
+
+  <!-- Sidebar Menu -->
+  <nav id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+    <a href="#musik">Musik</a>
+    <a href="#game">Game</a>
+    <a href="#gta">Mod GTA SA Android</a>
+    <a href="#minecraft">Mod/Add-on Minecraft</a>
+    <a href="#apk">APK Android</a>
+    <a href="#tutorial">Tutorial</a>
+    <a href="#donasi">Donasi</a>
+  </nav>
+
+  <!-- Konten Utama -->
+  <main class="main-content">
+    <h2>Selamat datang di website INDRASGAMING0MASI</h2>
+    <p>Website ini menyediakan berbagai informasi tentang musik, game, modifikasi GTA SA, add-on Minecraft, dan banyak lagi!</p>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById("sidebar");
+      if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+      } else {
+        sidebar.style.width = "250px";
+      }
+    }
+  </script>
+</body>
+</html>
