@@ -1,0 +1,26 @@
+$TTL 86400
+@    IN    SOA   ns1.cloudflare.com. admin.cloudflare.com. (
+                 2022121301 ; Serial
+                 3600       ; Refresh
+                 600        ; Retry
+                 1209600    ; Expire
+                 86400 )    ; Minimum TTL
+
+; Cloudflare nameservers
+@    IN    NS    ns1.cloudflare.com.
+@    IN    NS    ns2.cloudflare.com.
+
+; A records for GitHub Pages
+@    IN    A     185.199.108.153
+@    IN    A     185.199.109.153
+@    IN    A     185.199.110.153
+@    IN    A     185.199.111.153
+
+; CNAME record for www subdomain to GitHub Pages
+www  IN    CNAME  daraoficcial.github.io.
+
+; Optional: MX record for email (if needed)
+; example.com.  IN    MX    10 mail.example.com.
+
+; Optional: TXT record for domain verification (if needed)
+; example.com.  IN    TXT   "v=spf1 include:_spf.google.com ~all"
